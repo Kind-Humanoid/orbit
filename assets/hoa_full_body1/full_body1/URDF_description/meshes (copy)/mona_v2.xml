@@ -1,0 +1,217 @@
+<mujoco model="URDF">
+  <compiler angle="radian"/>
+  <asset>
+    <mesh name="base_link" file="base_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Sp2rR_fork_v6_1" file="shell_Sp2rR_fork_v6_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Sr2wR_fork_v14_1" file="shell_Sr2wR_fork_v14_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Humerus_Fork_v8_1" file="shell_Humerus_Fork_v8_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Ulna_Fork_v5_1" file="shell_Ulna_Fork_v5_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Radius_gen2_v31_1" file="shell_Radius_gen2_v31_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Sp2rR_fork_v6_Mirror__1" file="shell_Sp2rR_fork_v6_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Sr2wR_fork_v14_Mirror__1" file="shell_Sr2wR_fork_v14_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Humerus_Fork_v8_Mirror__1" file="shell_Humerus_Fork_v8_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Ulna_Fork_v5_Mirror__1" file="shell_Ulna_Fork_v5_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Radius_gen2_v31_Mirror__1" file="shell_Radius_gen2_v31_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="hand_secondIter_v9_Mirror__1" file="hand_secondIter_v9_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="hand_secondIter_v9_1" file="hand_secondIter_v9_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Fr2w_Fork_v6_1" file="shell_Fr2w_Fork_v6_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Fp2r_Fork_dual_v3_1" file="shell_Fp2r_Fork_dual_v3_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_torso_1" file="shell_torso_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="scaphoid_1" file="scaphoid_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="scaphoid_Mirror__1" file="scaphoid_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Hp2r_Fork_v9_1" file="shell_Hp2r_Fork_v9_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Hr2w_Fork_v16_1" file="shell_Hr2w_Fork_v16_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Femur_fork_v4_1" file="shell_Femur_fork_v4_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Tibia_Alt_fork_v12_1" file="shell_Tibia_Alt_fork_v12_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Ap2r_v5_1" file="shell_Ap2r_v5_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_foot_v16_Mirror__1" file="shell_foot_v16_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Hp2r_Fork_v9_Mirror__1" file="shell_Hp2r_Fork_v9_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Hr2w_Fork_v16_Mirror__1" file="shell_Hr2w_Fork_v16_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Femur_fork_v4_Mirror__1" file="shell_Femur_fork_v4_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Tibia_Alt_fork_v12_Mirror__1" file="shell_Tibia_Alt_fork_v12_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_Ap2r_v5_Mirror__1" file="shell_Ap2r_v5_Mirror__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shell_foot_v16_1" file="shell_foot_v16_1.stl" scale="0.001 0.001 0.001"/>
+  </asset>
+  <worldbody>
+    <geom type="mesh" rgba="0.7 0.7 0.7 1" mesh="base_link"/>
+    <body name="shell_Fr2w_Fork_v6_1" pos="0 0 0.08448">
+      <inertial pos="-0.0134037 -1.28947e-07 0.0897088" quat="0.410834 0.575513 0.575513 0.410834" mass="1.64424" diaginertia="0.011252 0.00887014 0.00594086"/>
+      <joint name="Revolute 20" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+      <geom pos="0 0 -0.08448" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Fr2w_Fork_v6_1"/>
+      <body name="shell_Fp2r_Fork_dual_v3_1" pos="0.0305 0 0.1522">
+        <inertial pos="-0.000954547 -0.00417876 6.73482e-08" quat="0.482905 0.482905 0.516529 0.516529" mass="0.146163" diaginertia="0.000454606 0.000433 0.000320394"/>
+        <joint name="Revolute 21" pos="0 0 0" axis="1 0 0" range="-0.628319 0.628319" actuatorfrcrange="-100 100"/>
+        <geom pos="-0.0305 0 -0.23668" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Fp2r_Fork_dual_v3_1"/>
+        <body name="shell_torso_1" pos="0.000874 0 0">
+          <inertial pos="-0.0319595 5.80206e-07 0.208297" quat="0.999281 0 -0.0379211 0" mass="5.20486" diaginertia="0.112904 0.094706 0.0563995"/>
+          <joint name="Revolute 22" pos="0 0 0" axis="0 1 0" range="-0.287979 0.907571" actuatorfrcrange="-100 100"/>
+          <geom pos="-0.031374 0 -0.23668" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_torso_1"/>
+          <body name="shell_Sp2rR_fork_v6_1" pos="-0.032 -0.1279 0.3292">
+            <inertial pos="0.00210198 -0.0643948 6.20677e-07" quat="0.706978 0.706978 0.0134708 0.0134708" mass="0.750073" diaginertia="0.00212818 0.001773 0.00131382"/>
+            <joint name="Revolute 2" pos="0 0 0" axis="0 1 0" range="-3.14159 1.5708" actuatorfrcrange="-100 100"/>
+            <geom pos="0.000626 0.1279 -0.56588" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Sp2rR_fork_v6_1"/>
+            <body name="shell_Sr2wR_fork_v14_1" pos="0.00102 -0.08839 0">
+              <inertial pos="-0.00676748 0.000476725 -0.0637433" quat="0.699228 -0.101201 -0.105312 0.69982" mass="0.978546" diaginertia="0.00437906 0.00352726 0.00260168"/>
+              <joint name="Revolute 3" pos="0 0 0" axis="1 0 0" range="-2.26893 0.174533" actuatorfrcrange="-100 100"/>
+              <geom pos="-0.000394 0.21629 -0.56588" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Sr2wR_fork_v14_1"/>
+              <body name="shell_Humerus_Fork_v8_1" pos="-0.00105 0 -0.146483">
+                <inertial pos="-0.00349646 0.00263963 -0.104404" quat="0.705069 0.00551324 -0.011204 0.709029" mass="0.876673" diaginertia="0.00397843 0.00370214 0.00144144"/>
+                <joint name="Revolute 4" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+                <geom pos="0.000656 0.21629 -0.419397" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Humerus_Fork_v8_1"/>
+                <body name="shell_Ulna_Fork_v5_1" pos="0 0.00077 -0.15139">
+                  <inertial pos="9.62901e-06 -0.00344448 -0.0452394" quat="0.913229 0.407446 0 0" mass="0.698159" diaginertia="0.002413 0.00185007 0.00165493"/>
+                  <joint name="Revolute 5" pos="0 0 0" axis="0 1 0" range="-2.26893 0" actuatorfrcrange="-100 100"/>
+                  <geom pos="0.000656 0.21552 -0.268007" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Ulna_Fork_v5_1"/>
+                  <body name="shell_Radius_gen2_v31_1" pos="0 -0.00095 -0.100482">
+                    <inertial pos="9.37117e-06 -0.00117845 -0.124991" quat="0.999951 -0.00993344 0 0" mass="0.876922" diaginertia="0.003786 0.00344577 0.00148223"/>
+                    <joint name="Revolute 6" pos="0 0 0" axis="0 0 1" range="-3.14159 0" actuatorfrcrange="-100 100"/>
+                    <geom pos="0.000656 0.21647 -0.167525" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Radius_gen2_v31_1"/>
+                    <body name="scaphoid_1" pos="6.5e-05 0 -0.207787">
+                      <inertial pos="-1.58999e-07 -1.3481e-08 4.05809e-07" quat="0.5 0.5 -0.5 0.5" mass="0.0259174" diaginertia="7e-06 4e-06 4e-06"/>
+                      <joint name="Revolute 23" pos="0 0 0" axis="0 1 0" range="-0.523599 0.523599" actuatorfrcrange="-100 100"/>
+                      <geom pos="0.000591 0.21647 0.040262" type="mesh" rgba="0.7 0.7 0.7 1" mesh="scaphoid_1"/>
+                      <body name="hand_secondIter_v9_Mirror__1">
+                        <inertial pos="-0.00343585 0.00506416 -0.0641579" quat="0.978592 -0.031701 0.00787655 0.203201" mass="0.340548" diaginertia="0.00134431 0.00105859 0.0004321"/>
+                        <joint name="Revolute 14" pos="0 0 0" axis="1 0 0" range="-0.698132 0.349066" actuatorfrcrange="-100 100"/>
+                        <geom pos="0.000591 0.21647 0.040262" type="mesh" rgba="0.7 0.7 0.7 1" mesh="hand_secondIter_v9_Mirror__1"/>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="shell_Sp2rR_fork_v6_Mirror__1" pos="-0.032 0.1279 0.3292">
+            <inertial pos="0.00210198 0.0643948 6.20677e-07" quat="0.706978 0.706978 -0.0134708 -0.0134708" mass="0.750073" diaginertia="0.00212818 0.001773 0.00131382"/>
+            <joint name="Revolute 7" pos="0 0 0" axis="0 1 0" range="-3.14159 1.5708" actuatorfrcrange="-100 100"/>
+            <geom pos="0.000626 -0.1279 -0.56588" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Sp2rR_fork_v6_Mirror__1"/>
+            <body name="shell_Sr2wR_fork_v14_Mirror__1" pos="0.00102 0.08839 0">
+              <inertial pos="-0.00676748 -0.000476725 -0.0637433" quat="0.69982 -0.105312 -0.101201 0.699228" mass="0.978546" diaginertia="0.00437906 0.00352726 0.00260168"/>
+              <joint name="Revolute 8" pos="0 0 0" axis="1 0 0" range="-0.174533 2.26893" actuatorfrcrange="-100 100"/>
+              <geom pos="-0.000394 -0.21629 -0.56588" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Sr2wR_fork_v14_Mirror__1"/>
+              <body name="shell_Humerus_Fork_v8_Mirror__1" pos="-0.00105 0 -0.146483">
+                <inertial pos="-0.00349646 -0.00263963 -0.104404" quat="0.709029 -0.011204 0.00551324 0.705069" mass="0.876673" diaginertia="0.00397843 0.00370214 0.00144144"/>
+                <joint name="Revolute 9" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+                <geom pos="0.000656 -0.21629 -0.419397" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Humerus_Fork_v8_Mirror__1"/>
+                <body name="shell_Ulna_Fork_v5_Mirror__1" pos="0 -0.00077 -0.15139">
+                  <inertial pos="9.62901e-06 0.00344448 -0.0452394" quat="0.407446 0.913229 0 0" mass="0.698159" diaginertia="0.002413 0.00185007 0.00165493"/>
+                  <joint name="Revolute 10" pos="0 0 0" axis="0 1 0" range="-2.26893 0" actuatorfrcrange="-100 100"/>
+                  <geom pos="0.000656 -0.21552 -0.268007" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Ulna_Fork_v5_Mirror__1"/>
+                  <body name="shell_Radius_gen2_v31_Mirror__1" pos="0 0.00095 -0.100482">
+                    <inertial pos="9.35442e-06 0.00117859 -0.123991" quat="0.999951 0.00993344 0 0" mass="0.87692" diaginertia="0.003786 0.00344577 0.00148223"/>
+                    <joint name="Revolute 11" pos="0 0 0" axis="0 0 1" range="0 3.14159" actuatorfrcrange="-100 100"/>
+                    <geom pos="0.000656 -0.21647 -0.167525" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Radius_gen2_v31_Mirror__1"/>
+                    <body name="scaphoid_Mirror__1" pos="6.5e-05 0 -0.206787">
+                      <inertial pos="-1.58999e-07 1.3481e-08 4.05809e-07" quat="0.5 0.5 -0.5 0.5" mass="0.0259174" diaginertia="7e-06 4e-06 4e-06"/>
+                      <joint name="Revolute 24" pos="0 0 0" axis="0 1 0" range="-0.523599 0.523599" actuatorfrcrange="-100 100"/>
+                      <geom pos="0.000591 -0.21647 0.039262" type="mesh" rgba="0.7 0.7 0.7 1" mesh="scaphoid_Mirror__1"/>
+                      <body name="hand_secondIter_v9_1">
+                        <inertial pos="-0.00343586 -0.00506416 -0.0641579" quat="0.978592 0.031701 0.00787655 -0.203201" mass="0.340548" diaginertia="0.00134431 0.00105859 0.0004321"/>
+                        <joint name="Revolute 17" pos="0 0 0" axis="1 0 0" range="-0.349066 0.698132" actuatorfrcrange="-100 100"/>
+                        <geom pos="0.000591 -0.21647 0.039262" type="mesh" rgba="0.7 0.7 0.7 1" mesh="hand_secondIter_v9_1"/>
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="shell_Hp2r_Fork_v9_1" pos="0 -0.07805 0">
+      <inertial pos="-0.0141996 -0.0485335 3.44054e-05" quat="0.485909 0.487111 0.512789 0.513481" mass="0.966865" diaginertia="0.00338981 0.002866 0.00275019"/>
+      <joint name="Revolute 25" pos="0 0 0" axis="0 1 0" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+      <geom pos="0 0.07805 0" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Hp2r_Fork_v9_1"/>
+      <body name="shell_Hr2w_Fork_v16_1" pos="-0.006681 -0.063408 0.0001">
+        <inertial pos="-0.00952234 -0.00116999 -0.1034" quat="0.715613 -0.10037 -0.111741 0.682157" mass="1.46012" diaginertia="0.0123951 0.00880392 0.00647794"/>
+        <joint name="Revolute 26" pos="0 0 0" axis="1 0 0" range="-1.5708 0.610865" actuatorfrcrange="-100 100"/>
+        <geom pos="0.006681 0.141458 -0.0001" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Hr2w_Fork_v16_1"/>
+        <body name="shell_Femur_fork_v4_1" pos="0.0059 0 -0.21643">
+          <inertial pos="0.00550338 0.0121435 -0.147595" quat="0.715678 0.0344328 -0.0145762 0.697428" mass="1.55467" diaginertia="0.0114351 0.0100695 0.0039594"/>
+          <joint name="Revolute 27" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+          <geom pos="0.000781 0.141458 0.21633" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Femur_fork_v4_1"/>
+          <body name="shell_Tibia_Alt_fork_v12_1" pos="0 0.011525 -0.20343">
+            <inertial pos="0.0049156 -0.0471964 -0.179273" quat="0.996568 -0.0697109 -0.00247143 -0.0445611" mass="2.28598" diaginertia="0.0449954 0.0441979 0.0066517"/>
+            <joint name="Revolute 28" pos="0 0 0" axis="0 1 0" range="0 2.61799" actuatorfrcrange="-100 100"/>
+            <geom pos="0.000781 0.129933 0.41976" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Tibia_Alt_fork_v12_1"/>
+            <body name="shell_Ap2r_v5_1" pos="0 -0.0554 -0.4101">
+              <inertial pos="0.01075 0.0488861 7.92256e-07" quat="0.498939 0.498939 0.501059 0.501059" mass="0.854091" diaginertia="0.00330603 0.002482 0.00189097"/>
+              <joint name="Revolute 29" pos="0 0 0" axis="0 1 0" range="-0.785398 0.785398" actuatorfrcrange="-100 100"/>
+              <geom pos="0.000781 0.185333 0.82986" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Ap2r_v5_1"/>
+              <body name="shell_foot_v16_Mirror__1" pos="0.07781 0.0443 0">
+                <inertial pos="0.00978994 -0.00464532 -0.0467468" quat="0.739197 0.273168 0.456071 0.413481" mass="0.823883" diaginertia="0.00361388 0.00342654 0.00167958"/>
+                <joint name="Revolute 30" pos="0 0 0" axis="1 0 0" range="0 0.785398" actuatorfrcrange="-100 100"/>
+                <geom pos="-0.077029 0.141033 0.82986" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_foot_v16_Mirror__1"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="shell_Hp2r_Fork_v9_Mirror__1" pos="0 0.07805 0">
+      <inertial pos="-0.0141987 0.0485343 3.38956e-05" quat="0.513481 0.512789 0.487111 0.485909" mass="0.96689" diaginertia="0.00338981 0.002866 0.00275019"/>
+      <joint name="Revolute 31" pos="0 0 0" axis="0 1 0" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+      <geom pos="0 -0.07805 0" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Hp2r_Fork_v9_Mirror__1"/>
+      <body name="shell_Hr2w_Fork_v16_Mirror__1" pos="-0.006681 0.063408 0.0001">
+        <inertial pos="-0.00952234 0.00116999 -0.1034" quat="0.682157 -0.111741 -0.10037 0.715613" mass="1.46012" diaginertia="0.0123951 0.00880392 0.00647794"/>
+        <joint name="Revolute 32" pos="0 0 0" axis="1 0 0" range="-0.610865 1.5708" actuatorfrcrange="-100 100"/>
+        <geom pos="0.006681 -0.141458 -0.0001" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Hr2w_Fork_v16_Mirror__1"/>
+        <body name="shell_Femur_fork_v4_Mirror__1" pos="0.0059 0 -0.21643">
+          <inertial pos="0.00550338 -0.0121435 -0.147595" quat="0.697428 -0.0145762 0.0344328 0.715678" mass="1.55467" diaginertia="0.0114351 0.0100695 0.0039594"/>
+          <joint name="Revolute 33" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708" actuatorfrcrange="-100 100"/>
+          <geom pos="0.000781 -0.141458 0.21633" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Femur_fork_v4_Mirror__1"/>
+          <body name="shell_Tibia_Alt_fork_v12_Mirror__1" pos="0 -0.011525 -0.20343">
+            <inertial pos="0.0049156 0.0471964 -0.179273" quat="0.996568 0.0697109 -0.00247143 0.0445611" mass="2.28598" diaginertia="0.0449954 0.0441979 0.0066517"/>
+            <joint name="Revolute 34" pos="0 0 0" axis="0 1 0" range="0 2.61799" actuatorfrcrange="-100 100"/>
+            <geom pos="0.000781 -0.129933 0.41976" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Tibia_Alt_fork_v12_Mirror__1"/>
+            <body name="shell_Ap2r_v5_Mirror__1" pos="0 0.0554 -0.4101">
+              <inertial pos="0.01075 -0.0488861 7.92256e-07" quat="0.501059 0.501059 0.498939 0.498939" mass="0.854091" diaginertia="0.00330603 0.002482 0.00189097"/>
+              <joint name="Revolute 35" pos="0 0 0" axis="0 1 0" range="-0.785398 0.785398" actuatorfrcrange="-100 100"/>
+              <geom pos="0.000781 -0.185333 0.82986" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_Ap2r_v5_Mirror__1"/>
+              <body name="shell_foot_v16_1" pos="0.07781 -0.0443 0">
+                <inertial pos="0.0117899 0.00464532 -0.0467468" quat="0.413481 0.456071 0.273168 0.739197" mass="0.823883" diaginertia="0.00361388 0.00342654 0.00167958"/>
+                <joint name="Revolute 36" pos="0 0 0" axis="1 0 0" range="-0.785398 0" actuatorfrcrange="-100 100"/>
+                <geom pos="-0.077029 -0.141033 0.82986" type="mesh" rgba="0.7 0.7 0.7 1" mesh="shell_foot_v16_1"/>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="Revolute 2"       gear="40"  joint="Revolute 2"/>
+    <motor name="Revolute 3"       gear="40"  joint="Revolute 3"/>
+    <motor name="Revolute 4"       gear="40"  joint="Revolute 4"/>
+    <motor name="Revolute 5"       gear="40"  joint="Revolute 5"/>
+    <motor name="Revolute 6"       gear="40"  joint="Revolute 6"/>
+    <motor name="Revolute 7"       gear="40"  joint="Revolute 7"/>
+    <motor name="Revolute 8"       gear="40"  joint="Revolute 8"/>
+    <motor name="Revolute 9"       gear="40"  joint="Revolute 9"/>
+    <motor name="Revolute 10"      gear="40"  joint="Revolute 10"/>
+    <motor name="Revolute 11"      gear="40"  joint="Revolute 11"/>
+    <motor name="Revolute 14"      gear="40"  joint="Revolute 14"/>
+    <motor name="Revolute 17"      gear="40"  joint="Revolute 17"/>
+    <motor name="Revolute 20"      gear="40"  joint="Revolute 20"/>
+    <motor name="Revolute 21"      gear="40"  joint="Revolute 21"/>
+    <motor name="Revolute 22"      gear="40"  joint="Revolute 22"/>
+    <motor name="Revolute 23"      gear="40"  joint="Revolute 23"/>
+    <motor name="Revolute 24"      gear="40"  joint="Revolute 24"/>
+    <motor name="Revolute 25"      gear="40"  joint="Revolute 25"/>
+    <motor name="Revolute 26"      gear="40"  joint="Revolute 26"/>
+    <motor name="Revolute 27"      gear="40"  joint="Revolute 27"/>
+    <motor name="Revolute 28"      gear="40"  joint="Revolute 28"/>
+    <motor name="Revolute 29"      gear="40"  joint="Revolute 29"/>
+    <motor name="Revolute 30"      gear="40"  joint="Revolute 30"/>
+    <motor name="Revolute 31"      gear="40"  joint="Revolute 31"/>
+    <motor name="Revolute 32"      gear="40"  joint="Revolute 32"/>
+    <motor name="Revolute 33"      gear="40"  joint="Revolute 33"/>
+    <motor name="Revolute 34"      gear="40"  joint="Revolute 34"/>
+    <motor name="Revolute 35"      gear="40"  joint="Revolute 35"/>
+    <motor name="Revolute 36"      gear="40"  joint="Revolute 36"/>
+
+
+    
+  </actuator>
+</mujoco>
