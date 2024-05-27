@@ -23,11 +23,11 @@ installation steps, features, tutorials, and how to set up your project with Orb
 
 ## Announcements
 
-* [17.04.2024] [**v0.3.0**](https://github.com/NVIDIA-Omniverse/orbit/releases/tag/v0.3.0):
+- [17.04.2024] [**v0.3.0**](https://github.com/NVIDIA-Omniverse/orbit/releases/tag/v0.3.0):
   Several improvements and bug fixes to the framework. Includes cabinet opening and dexterous manipulation environments,
   terrain-aware patch sampling, and animation recording.
 
-* [22.12.2023] [**v0.2.0**](https://github.com/NVIDIA-Omniverse/orbit/releases/tag/v0.2.0):
+- [22.12.2023] [**v0.2.0**](https://github.com/NVIDIA-Omniverse/orbit/releases/tag/v0.2.0):
   Significant breaking updates to enhance the modularity and user-friendliness of the framework. Also includes
   procedural terrain generation, warp-based custom ray-casters, and legged-locomotion environments.
 
@@ -47,15 +47,14 @@ or opening a question on its [forums](https://forums.developer.nvidia.com/c/agx-
 
 ## Support
 
-* Please use GitHub [Discussions](https://github.com/NVIDIA-Omniverse/Orbit/discussions) for discussing ideas, asking questions, and requests for new features.
-* Github [Issues](https://github.com/NVIDIA-Omniverse/orbit/issues) should only be used to track executable pieces of work with a definite scope and a clear deliverable. These can be fixing bugs, documentation issues, new features, or general updates.
+- Please use GitHub [Discussions](https://github.com/NVIDIA-Omniverse/Orbit/discussions) for discussing ideas, asking questions, and requests for new features.
+- Github [Issues](https://github.com/NVIDIA-Omniverse/orbit/issues) should only be used to track executable pieces of work with a definite scope and a clear deliverable. These can be fixing bugs, documentation issues, new features, or general updates.
 
 ## Running Olympia model
 
 1. Change the usd path in olympia_env_cfg.py Line 45 to your path of usd file
 2. To run training: python source/standalone/workflows/rl_games/train.py --task Isaac-Olympia-v0 --num_envs 200
 3. To run standalone env: python source/standalone/tutorials/03_envs/run_olympia_rl_env.py --num_envs 1
-
 
 ## Acknowledgement
 
